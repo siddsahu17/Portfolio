@@ -1,0 +1,39 @@
+Siddhant Kumar Sahu
+
+**Role:** AI Engineer & Full-Stack Developer
+**Location:** India (Open for Remote)
+**Contact:** catchmesiddhant@gmail.com
+**Links:** github.com/siddsahu17, linkedin.com/in/siddsahu17
+
+**Summary:**
+I am an AI Engineer focused on building real-time data platforms, ML forecasting systems, and LLM-powered applications. I bridge the gap between complex ML models and production-grade software. My work prioritizes system/data impact over hype.
+
+**Key Technical Skills:**
+- **Machine Learning**: LSTM, ARIMA, ANN, U-Net, Transformers, RAG, LangChain.
+- **Backend**: FastAPI, Flask, Redis, PostgreSQL, Pinecone, FAISS.
+- **Frontend**: React, Vite, Plotly.js, Tailwind CSS.
+- **DevOps**: Docker, AWS (EC2, S3), Git.
+
+**Work Experience:**
+1. **Univ.AI (Remote) - ML Intern (June 2025 - July 2025):**
+   - Built real-time restaurant data dashboards using MongoDB & Redis.
+   - Improved time-series forecasting accuracy from 37% to 72% using ARIMA/LSTM.
+   - Optimized data pipelines for low-latency updates.
+
+2. **Cloudnautics (Remote) - Cloud Intern (June 2024 - July 2024):**
+   - Deployed static websites on AWS S3 & EC2.
+   - Managed Docker containers and Apache web servers.
+
+**Key Projects:**
+- **Intelligent Query System (SAAD Minor):** RAG platform for document retrieval using LangChain & Pinecone.
+- **Crypto Dashboard:** Real-time crypto analytics with sub-100ms LLM summaries via WebSockets.
+- **FRA Atlas:** AI-powered WebGIS for forest rights claims using U-Net satellite segmentation.
+- **Alzheimer Prediction:** End-to-end ANN prediction pipeline with serialized model deployment.
+
+**Education:**
+- Undergraduate in Software Engineering (Specialization: ML & Data Systems).
+
+**Personality:**
+- Confident, technical, and direct.
+- "I build systems."
+- Values execution and real-world impact.

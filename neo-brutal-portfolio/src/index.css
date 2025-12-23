@@ -1,0 +1,170 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+/* Neo-Brutalist Design System */
+@layer base {
+  :root {
+    --background: 60 9% 98%;
+    --foreground: 0 0% 0%;
+
+    --card: 60 9% 98%;
+    --card-foreground: 0 0% 0%;
+
+    --popover: 60 9% 98%;
+    --popover-foreground: 0 0% 0%;
+
+    --primary: 0 0% 0%;
+    --primary-foreground: 60 9% 98%;
+
+    --secondary: 60 9% 94%;
+    --secondary-foreground: 0 0% 0%;
+
+    --muted: 60 5% 90%;
+    --muted-foreground: 0 0% 40%;
+
+    --accent: 75 80% 50%;
+    --accent-foreground: 0 0% 0%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 0 0% 0%;
+    --input: 0 0% 0%;
+    --ring: 0 0% 0%;
+
+    --radius: 0px;
+
+    /* Custom brutalist tokens */
+    --border-thick: 3px;
+    --border-brutal: 4px;
+    --shadow-brutal: 4px 4px 0px hsl(var(--foreground));
+    --shadow-brutal-lg: 8px 8px 0px hsl(var(--foreground));
+    --shadow-brutal-hover: 6px 6px 0px hsl(var(--foreground));
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 0 0% 5%;
+    --foreground: 60 9% 98%;
+
+    --card: 0 0% 8%;
+    --card-foreground: 60 9% 98%;
+
+    --popover: 0 0% 8%;
+    --popover-foreground: 60 9% 98%;
+
+    --primary: 60 9% 98%;
+    --primary-foreground: 0 0% 0%;
+
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 60 9% 98%;
+
+    --muted: 0 0% 20%;
+    --muted-foreground: 60 5% 60%;
+
+    --accent: 75 80% 50%;
+    --accent-foreground: 0 0% 0%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 60 9% 98%;
+    --input: 60 9% 98%;
+    --ring: 60 9% 98%;
+
+    --shadow-brutal: 4px 4px 0px hsl(var(--foreground));
+    --shadow-brutal-lg: 8px 8px 0px hsl(var(--foreground));
+    --shadow-brutal-hover: 6px 6px 0px hsl(var(--foreground));
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Space Grotesk', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Space Grotesk', sans-serif;
+    @apply font-bold tracking-tight;
+  }
+}
+
+@layer components {
+  .brutal-border {
+    @apply border-[3px] border-foreground;
+  }
+
+  .brutal-shadow {
+    box-shadow: var(--shadow-brutal);
+  }
+
+  .brutal-shadow-lg {
+    box-shadow: var(--shadow-brutal-lg);
+  }
+
+  .brutal-card {
+    @apply brutal-border brutal-shadow bg-background transition-all duration-200;
+  }
+
+  .brutal-card:hover {
+    box-shadow: var(--shadow-brutal-hover);
+    transform: translate(-2px, -2px);
+  }
+
+  .brutal-btn {
+    @apply brutal-border brutal-shadow px-6 py-3 font-semibold uppercase tracking-wide;
+    @apply transition-all duration-200 hover:translate-x-[-2px] hover:translate-y-[-2px];
+  }
+
+  .brutal-btn:hover {
+    box-shadow: var(--shadow-brutal-hover);
+  }
+
+  .brutal-btn:active {
+    box-shadow: 2px 2px 0px hsl(var(--foreground));
+    transform: translate(2px, 2px);
+  }
+
+  .brutal-tag {
+    @apply border-2 border-foreground px-3 py-1 text-xs font-mono uppercase tracking-wider;
+  }
+
+  .section-title {
+    @apply text-sm font-bold uppercase tracking-[0.2em] text-muted-foreground mb-2;
+  }
+
+  .link-underline {
+    @apply relative inline-block;
+  }
+
+  .link-underline::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-full h-[2px] bg-foreground scale-x-0 origin-right transition-transform duration-300;
+  }
+
+  .link-underline:hover::after {
+    @apply scale-x-100 origin-left;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

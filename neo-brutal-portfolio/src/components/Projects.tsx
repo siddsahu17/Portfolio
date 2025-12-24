@@ -16,6 +16,14 @@ const projects = [
     codeUrl: "https://github.com/siddsahu17/CryptoCurrency-Dashboard",
   },
   {
+  category: "Assistive AI / Accessibility",
+  title: "Braille Script to Audio Transcription System",
+  description: "Research-backed assistive AI system that converts Braille scripts into structured text and natural speech audio, enabling accessible content consumption for visually impaired users.",
+  tags: ["Python", "NLP", "Text-to-Speech", "Accessibility", "Assistive AI"],
+  codeUrl: "https://github.com/siddsahu17/airy-ui-makeover",
+  paperUrl: "https://<LINK_TO_REVIEW_PAPER>",
+  },
+  {
     category: "AI WebGIS",
     title: "FRA Atlas WebGIS",
     description: "Digitized platform with U-Net satellite segmentation and RAG chatbot for citizen guidance.",
@@ -28,14 +36,6 @@ const projects = [
     description: "ANN-based prediction pipeline with full preprocessing and serialized model deployment.",
     tags: ["Keras", "Scikit-Learn", "FastAPI", "Docker"],
     codeUrl: "https://github.com/siddsahu17/Alzheimer-Prediction",
-  },
-  {
-  category: "Assistive AI / Accessibility",
-  title: "Braille Script to Audio Transcription System",
-  description: "Research-backed assistive AI system that converts Braille scripts into structured text and natural speech audio, enabling accessible content consumption for visually impaired users.",
-  tags: ["Python", "NLP", "Text-to-Speech", "Accessibility", "Assistive AI"],
-  codeUrl: "https://github.com/siddsahu17/airy-ui-makeover",
-  paperUrl: "https://<LINK_TO_REVIEW_PAPER>",
   },
 ];
 

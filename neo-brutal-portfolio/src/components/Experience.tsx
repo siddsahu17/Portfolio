@@ -15,11 +15,6 @@ const experiences = [
 
 const achievements = [
   {
-    icon: "🏆",
-    title: "District Debate",
-    subtitle: "3rd Prize",
-  },
-  {
     icon: "⭐",
     title: "CodeChef Rating",
     subtitle: "1450 (Div-2)",
@@ -28,11 +23,6 @@ const achievements = [
     icon: "👤",
     title: "Codeforces",
     subtitle: "950 Rating",
-  },
-  {
-    icon: "✓",
-    title: "Certification",
-    subtitle: "Cisco CyberSec",
   },
 ];
 
@@ -58,7 +48,7 @@ const Experience = () => {
         </div>
 
         {/* Achievements */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6, text-center">
           {achievements.map((achievement, idx) => (
             <div 
               key={achievement.title}

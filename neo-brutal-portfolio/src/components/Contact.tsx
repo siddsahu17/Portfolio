@@ -26,12 +26,12 @@ const Contact = () => {
 
           <div className="flex gap-4 mb-16">
             <Button variant="outline" size="icon" asChild className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <a href="https://github.com/siddsahu17" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                 <Github size={20} />
               </a>
             </Button>
             <Button variant="outline" size="icon" asChild className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <a href="https://linkedin.com/in/siddsahu17/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                 <Linkedin size={20} />
               </a>
             </Button>

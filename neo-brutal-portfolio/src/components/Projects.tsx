@@ -14,6 +14,7 @@ const projects = [
     description: "Real-time dashboard with Plotly.js, sub-100ms LLM summarization, and WebSocket streaming.",
     tags: ["React", "FastAPI", "Plotly.js", "Redis"],
     codeUrl: "https://github.com/siddsahu17/CryptoCurrency-Dashboard",
+    liveUrl: "https://crypto-currency-dashboard-psi.vercel.app/"
   },
   {
   category: "Assistive AI / Accessibility",
@@ -21,7 +22,7 @@ const projects = [
   description: "Research-backed assistive AI system that converts Braille scripts into structured text and natural speech audio, enabling accessible content consumption for visually impaired users.",
   tags: ["Python", "NLP", "Text-to-Speech", "Accessibility", "Assistive AI"],
   codeUrl: "https://github.com/siddsahu17/airy-ui-makeover",
-  paperUrl: "https://<LINK_TO_REVIEW_PAPER>",
+  paperUrl: "/Review_Paper (1).pdf",
   },
   {
     category: "AI WebGIS",
@@ -29,6 +30,7 @@ const projects = [
     description: "Digitized platform with U-Net satellite segmentation and RAG chatbot for citizen guidance.",
     tags: ["PostGIS", "TensorFlow", "React", "GeoServer"],
     codeUrl: "https://github.com/siddsahu17/FRA",
+    liveUrl:"https://fra-pi.vercel.app/login",
   },
   {
     category: "Medical AI",

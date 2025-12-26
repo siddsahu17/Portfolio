@@ -36,14 +36,14 @@ const Chatbot = ({ isOpen, onClose }: ChatbotProps) => {
     setInput('');
 
     try {
-        const response = await fetch("http://localhost:8000/chat", {
+        const response = await fetch("http://localhost:8080/chat", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
             },
             body: JSON.stringify({ 
                 message: input,
-                history: messages 
+                history: messages.map(msg => ({ role: msg.role, text: msg.text }))
             }),
         });
 
@@ -55,7 +55,7 @@ const Chatbot = ({ isOpen, onClose }: ChatbotProps) => {
         setMessages(prev => [...prev, { role: 'assistant', text: data.response }]);
     } catch (error) {
         console.error("Chat Error:", error);
-        setMessages(prev => [...prev, { role: 'assistant', text: "Sorry, I'm having trouble connecting to the server. Please check if the backend is running." }]);
+        setMessages(prev => [...prev, { role: 'assistant', text: "I'm having trouble connecting. Please make sure the backend is running on port 8000." }]);
     }
   };
 

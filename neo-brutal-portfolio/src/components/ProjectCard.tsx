@@ -1,4 +1,4 @@
-import { ArrowUpRight, Github, ExternalLink } from "lucide-react";
+import { ArrowUpRight, Github, ExternalLink, FileText } from "lucide-react";
 
 interface ProjectCardProps {
   category: string;
@@ -7,10 +7,11 @@ interface ProjectCardProps {
   tags: string[];
   codeUrl?: string;
   liveUrl?: string;
+  paperUrl?: string;
   index: number;
 }
 
-const ProjectCard = ({ category, title, description, tags, codeUrl, liveUrl, index }: ProjectCardProps) => {
+const ProjectCard = ({ category, title, description, tags, codeUrl, liveUrl, paperUrl, index }: ProjectCardProps) => {
   return (
     <article 
       className="brutal-card p-6 md:p-8 group animate-fade-in"
@@ -59,6 +60,17 @@ const ProjectCard = ({ category, title, description, tags, codeUrl, liveUrl, ind
           >
             <ExternalLink size={16} />
             Live Demo
+          </a>
+        )}
+        {paperUrl && (
+          <a 
+            href={paperUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 text-sm font-medium link-underline"
+          >
+            <FileText size={16} />
+            Review Paper
           </a>
         )}
       </div>
